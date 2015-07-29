@@ -78,8 +78,8 @@ The top 50 battles as noted by the page rank algorithm were:
 Most of the battles here are from World War 2 which makes sense given that this war occupies the
 cultural lexicon of war most prominently and also the scale of the conflict. Of note is that this
 list has a decidedly Western Europe/USA focus as exemplified by a battle as major as the [Battle of Shanghai][3] 
-being left off this list whereas clashes between anti/pro facist demonstrators are represented in the Battles of 
-Stockton and Cable Street made it to the top 50.
+being left off this list whereas clashes between anti/pro facist demonstrators in England are represented by the 
+Battles of Stockton and Cable Street on the top 50.
 
 Note the Battles of Alberta, Ontario, and Quebec are actually ice hockey rivalries. It seems amusing but
 understandable that they appear ranked this highly alongside historical events such as the Battle of 
