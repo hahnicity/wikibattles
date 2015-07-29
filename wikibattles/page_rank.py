@@ -11,17 +11,18 @@ def rank(graph, iters):
     for k, _ in graph.nodes(data=True):
         ranks[k] = 1.0 / V
 
-    for _ in range(iters):
+    for _ in xrange(iters):
         for key, node in graph.nodes(data=True):
             rank_sum = 0
-            curr_rank = node.get('rank')
-            neighbors = graph.out_edges(key)
+            # In page rank the entry pi,pj is denoted > 0 if j links to i so look for all in edges to
+            # a node i.
+            neighbors = graph.in_edges(key)
             for neigh in neighbors:
-                outlinks = len(graph.out_edges(neigh[1]))
+                outlinks = len(graph.out_edges(neigh[0]))
                 if outlinks > 0:
-                    rank_sum += (1 / float(outlinks)) * ranks[neigh[1]]
+                    rank_sum += (1 / float(outlinks)) * ranks[neigh[0]]
             # actual page rank compution
-            ranks[key] = ((1 - float(d)) * (1/float(V))) + d*rank_sum
+            ranks[key] = ((1 - d) * (1.0 / V)) + d * rank_sum
     return ranks
 
 

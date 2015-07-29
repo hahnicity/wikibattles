@@ -11,22 +11,22 @@ def parse(filename):
 
 
 def parse_directed(data):
-    DG = nx.DiGraph()
+    digraph = nx.DiGraph()
 
-    for i, row in enumerate(data):
-
+    for row in data:
         node_a = format_key(row[0])
         node_b = format_key(row[2])
         val_a = digits(row[1])
         val_b = digits(row[3])
 
-        DG.add_edge(node_a, node_b)
         if val_a >= val_b:
-            DG.add_path([node_a, node_b])
+            # Weighted toward a so directed edge from b to a
+            digraph.add_edge(node_b, node_a)
         else:
-            DG.add_path([node_b, node_a])
+            # Weighted toward b so directed edge from a to b
+            digraph.add_edge(node_a, node_b)
 
-    return DG
+    return digraph
 
 
 def digits(val):

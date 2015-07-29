@@ -28,5 +28,5 @@ def retrive_data(host, password, user, port, db):
     cursor = db.cursor()
     # eh... I've made things configurable except for the database schema... so it's not really
     # configurable. Oh well unless someone else wants to follow my steps.
-    cursor.execute("select page_title,page_to_title from page as t1 inner join battle_links as t2 on t2.pl_from=t1.page_id;")
+    cursor.execute("select page_title,page_to_title from page as t1 inner join battle_links as t2 on t2.pl_from=t1.page_id where page_namespace=0;")
     return cursor
