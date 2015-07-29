@@ -12,6 +12,7 @@ def rank(graph, iters):
         ranks[k] = 1.0 / V
 
     for _ in xrange(iters):
+        tmp_ranks = ranks.copy()
         for key, node in graph.nodes(data=True):
             rank_sum = 0
             # In page rank the entry pi,pj is denoted > 0 if j links to i so look for all in edges to
@@ -22,7 +23,8 @@ def rank(graph, iters):
                 if outlinks > 0:
                     rank_sum += (1 / float(outlinks)) * ranks[neigh[0]]
             # actual page rank compution
-            ranks[key] = ((1 - d) * (1.0 / V)) + d * rank_sum
+            tmp_ranks[key] = ((1 - d) * (1.0 / V)) + d * rank_sum
+        ranks = tmp_ranks
     return ranks
 
 

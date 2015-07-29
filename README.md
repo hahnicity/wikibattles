@@ -30,45 +30,45 @@ The top 50 battles as noted by the page rank algorithm were:
      4 Battle_of_the_Bulge            
      5 Battle_of_Stalingrad           
      6 Battle_of_Alberta              
-     7 Battle_of_the_Coral_Sea        
-     8 Battle_of_Midway               
-     9 Battle_of_Gettysburg           
-    10 Battle_of_Ontario              
+     7 Battle_of_Midway               
+     8 Battle_of_the_Coral_Sea        
+     9 Battle_of_Ontario              
+    10 Battle_of_Gettysburg           
     11 Battle_of_Quebec_(ice_hockey)  
     12 Battle_of_Okinawa              
     13 Battle_of_Moscow               
     14 Battle_of_Berlin               
-    15 Battle_of_Plassey              
-    16 Battle_of_Hong_Kong            
-    17 Battle_of_Kursk                
+    15 Battle_of_Hong_Kong            
+    16 Battle_of_Kursk                
+    17 Battle_of_Plassey              
     18 Battle_of_Caporetto            
     19 Battle_of_Belgium              
     20 Battle_of_the_Netherlands      
     21 Battle_of_Crete                
     22 Battle_of_Waterloo             
-    23 Battle_of_Cable_Street         
+    23 Battle_of_Deçiq               
     24 Battle_of_Leyte_Gulf           
     25 Battle_of_Iwo_Jima             
-    26 Battle_of_Kiev_(1941)          
-    27 Battle_of_Monte_Cassino        
-    28 Battle_of_Vittorio_Veneto      
+    26 Battle_of_Cable_Street         
+    27 Battle_of_Kiev_(1941)          
+    28 Battle_of_Monte_Cassino        
     29 Battle_of_Narva_(1944)         
-    30 Battle_of_Asiago               
-    31 Battle_of_Deçiq               
+    30 Battle_of_Vittorio_Veneto      
+    31 Battle_of_Asiago               
     32 Battle_of_the_Somme            
     33 Battle_of_Smolensk_(1943)      
     34 Battle_of_Greece               
-    35 Battle_of_St_Matthew's         
-    36 Battle_of_Jutland              
-    37 Battle_of_Borneo_(1941–42)   
+    35 Battle_of_Jutland              
+    36 Battle_of_Borneo_(1941–42)   
+    37 Battle_of_St_Matthew's         
     38 Battle_of_Rzhev,_Summer_1942   
-    39 Battle_of_Stockton             
-    40 Battle_of_Shumshu              
-    41 Battle_of_Manila_(1945)        
-    42 Battle_of_Changde              
-    43 Battle_of_Changsha_(1939)      
-    44 Battle_of_Changsha_(1942)      
-    45 Battle_of_Changsha_(1941)      
+    39 Battle_of_Shumshu              
+    40 Battle_of_Manila_(1945)        
+    41 Battle_of_Stockton             
+    42 Battle_of_Changsha_(1939)      
+    43 Battle_of_Changde              
+    44 Battle_of_Changsha_(1941)      
+    45 Battle_of_Changsha_(1942)      
     46 Battle_of_West_Hunan           
     47 Battle_of_the_Java_Sea         
     48 Battle_of_Trafalgar            
