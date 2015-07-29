@@ -1,5 +1,6 @@
 # wikibattles
 ![intro](http://horroretc.com/wp-content/uploads/2011/05/189.jpg)
+
 All battles in history (as noted in wikipedia) ranked by significance using page rank algorithm
 
 ## Basic
