@@ -4,22 +4,28 @@
 All battles in history (as noted in wikipedia) ranked by significance using page rank algorithm
 
 ## Basic
-The goal here is to use a well tested and known ranking algorithm, [page rank][2], and apply it 
-to all battles in wikipedia. We want to rank these battles in order of their significance 
-across the english language wikipedia. The hope here is that while history is subjective, we get 
-closer to a point of being objective about our results given the assumption that the hive mind that
-is wikipedia will yield more impartial results than just one single source.
+The goal here is to use a mature and well known ranking algorithm, [page rank][2], better known 
+as the Google algorithm, and apply it to all battles in wikipedia. We want to rank these battles 
+in order of their importance across the english language wikipedia. The hope here is that while 
+history is subjective, we get closer to a point of being objective about our results given the 
+assumption that the hive mind that is wikipedia will yield more impartial results than just one single source.
+
+## Data
+All data from this project was gathered from the [07/02/2015][4] data dump of wikipedia. The database used for
+this project was MariaDB but any MySQL derivative can be used. The goal was to find all wikipedia pages that
+linked to a specific battle. After finding all historical battles and all pages that linked to them we could
+then implement the algorithm and rank the battles in terms of importance.
 
 ## Algorithm
 The idea here was that I use the [top ranked][1] github project for page rank written in python.
-After some rewriting of the code to fix bugs and make it a bit faster I looked into how the data for the
+After rewriting the code to fix bugs and make it a bit faster I looked into how the data for the
 algorithm must be laid out. The data I used was meant to construct a csv file of page titles to the 
 battles they were linked to making the ensuing data look like
 
     <Link from page title>,0,<Link to page title>,1
 
 Where the 0 and 1 denote a weighting on the links s.t. the first page links to the second.
-After running the `page_rank.py` module on the data we wrote our output in results.txt.
+After running the `page_rank.py` module on the data in `battlelinks.csv` we wrote our output to `results.txt`.
 
 ## Results
 The top 50 battles as noted by the page rank algorithm were:
@@ -75,16 +81,23 @@ The top 50 battles as noted by the page rank algorithm were:
     49 Battle_of_Antietam             
     50 Battle_of_Singapore            
 
-Most of the battles here are from World War 2 which makes sense given that this war occupies the
-cultural lexicon of war most prominently and also the scale of the conflict. Of note is that this
-list has a decidedly Western Europe/USA focus as exemplified by a battle as major as the [Battle of Shanghai][3] 
-being left off this list whereas clashes between anti/pro facist demonstrators in England are represented by the 
-Battles of Stockton and Cable Street on the top 50.
+Most of the battles here are from World War 2. Of interest is that this list has a decidedly Western 
+Europe/USA focus as exemplified by a battle as major as the [Battle of Shanghai][3] being left off 
+this list whereas clashes between anti/pro facist demonstrators in England are represented by the 
+Battles of Stockton and Cable Street on the top 50. So it must be taken into consideration that these
+results are distorted by the lens of living in an English speaking country.
 
-Note the Battles of Alberta, Ontario, and Quebec are actually ice hockey rivalries. It seems amusing but
-understandable that they appear ranked this highly alongside historical events such as the Battle of 
-Okinawa.
+What didn't fit my hypothesis was that page rank would rank battles by importance across history. Rather, it 
+seemed to rank battles by scale and relevance to current times. I think this makes sense given that 
+wikipedia is composed of a collection of pages written by individuals since 2001. Given that World War 2 most
+directly shaped our modern world it is linked more heavily than earlier conflicts.
+
+The above explanation would support the observation of the Battles of Alberta, Ontario, and Quebec being highly
+ranked alongside pages such as the Battle of Okinawa. These are not actually historical battles but hockey
+rivalries and so they may have a much larger influence on the lives of people today than something like 
+Gettysburg.
 
 [1]: https://github.com/timothyasp/PageRank
 [2]: https://en.wikipedia.org/wiki/PageRank
 [3]: https://en.wikipedia.org/wiki/Battle_of_Shanghai
+[4]: https://dumps.wikimedia.org/enwiki/20150702/
